@@ -1,0 +1,170 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(77, 192, 154) 0%, rgb(77, 192, 154) 30%, rgb(238, 226, 192) 30%, rgb(238, 226, 192) 100%);
+}
+
+#app {
+    min-height: 100vh;
+}
+
+.blog-header {
+    background-color: rgba(231, 229, 229, 0.75);
+    border-bottom: 0;
+}
+
+.blog-title {
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 2.9rem;
+    color: rgb(216, 150, 7);
+}
+
+.blog-nav .nav-link {
+    color: rgb(45, 128, 108);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.blog-nav {
+    row-gap: 0.25rem;
+    column-gap: 0.15rem;
+}
+
+.blog-nav .nav-link:hover {
+    color: rgb(216, 150, 7);
+}
+
+.comments-title {
+    margin-bottom: 1rem;
+    color: rgb(60, 190, 160);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.food-photo {
+    border: 0.85rem solid rgb(255, 255, 255);
+}
+
+.post {
+    margin-bottom: 1rem;
+    padding: 1.1rem;
+    border: 2px solid rgba(83, 78, 58, 0.6);
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.post-meta {
+    color: #4f4f4f;
+}
+
+.post-meta .author {
+    font-weight: 700;
+    color: #212529;
+}
+
+.post-meta .reply {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: rgb(216, 150, 7);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.profile-thumb {
+    border-radius: 50%;
+    border: 2px solid rgb(60, 190, 160);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.profile-thumb:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+}
+
+.blog-footer {
+    text-align: center;
+    font-size: 0.85rem;
+    background-color: rgba(231, 229, 229, 0.55);
+    border-top: 0;
+}
+
+.author-card-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.author-card {
+    width: 420px;
+    max-width: 90%;
+    background: linear-gradient(145deg, #ffffff, #f6fbf8);
+    border: 2px solid rgb(60, 190, 160);
+    border-radius: 12px;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.28);
+    padding: 22px;
+    position: relative;
+}
+
+.author-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(45, 128, 108);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.author-card p {
+    margin: 8px 0;
+    line-height: 1.45;
+}
+
+.author-card .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: rgb(216, 150, 7);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.05em;
+    cursor: pointer;
+}
+
+.author-card .close-btn:hover {
+    background-color: rgb(187, 128, 5);
+}
+
+@media (max-width: 991.98px) {
+    .blog-title {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .blog-nav {
+        justify-content: center;
+    }
+}
